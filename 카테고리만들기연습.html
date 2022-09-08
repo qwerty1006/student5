@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>카테고리만들기연습 ul li</title>
+  <!-- ul안에 li들어가고 li안에 또다른 ul만드는 연습 -->
+
+</head>
+<body>
+  <!-- 
+    에밋 표기법
+    ul>li*4 -->
+  <ul>
+    <li>DRESS</li>
+    <li>OUTER</li>
+    <li>
+      TOP
+      <!-- top 서브메뉴 3개 ul>li*3 -->
+      <ul>
+        <li>티</li>
+        <li>셔츠</li>
+        <li>블라우스</li>
+      </ul>
+    </li>
+    <li>BOTTOM
+      <ul>
+        <li>팬츠</li>
+        <li>스커트</li>
+        <!-- bottom 서브메뉴 2개 ul>li*2 -->
+        <!-- 블록레벨은 태그안에 태그를 넣을수 있다 -->
+        <!-- 인라인레벨은 불가 -->
+      </ul>
+    </li>
+  </ul>
+</body>
+</html>
