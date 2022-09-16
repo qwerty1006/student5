@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>form</title>
+</head>
+<body>
+  <form action="">
+   <fieldset>
+     <legend>폼연습</legend>
+        <div>
+          <label for="tv">tv</label>
+          <input type="checkbox" id="tv">
+          <label for="news">news</label>
+          <input type="checkbox" id="news">
+        </div>
+     <!-- div 원하는 범위 잡고 
+      ctrl shift P (명령팔레트) 
+      >emmet:wrap 검색후 원하는 태그div  -->
+
+        <div>
+          <p>
+            라디오버튼<br>
+            라디오버튼을 그룹으로 묶을때 name값을 동일하게
+          
+          </p>
+          <div>
+            <label for="shipping1">배</label>
+            <input type="radio" id="shipping1" name="shipping"
+            checked>
+            <label for="shipping2">비행기</label>
+            <input type="radio" id="shipping2" name="shipping">
+            <label for="shipping3">기차</label>
+            <input type="radio" id="shipping3" name="shipping">
+          </div>
+          <div>
+            <!-- 브라우저별로 type값이 다르게 해석(예: 초기화/리셋)
+             input value 적어주기 -->
+            <input type="reset" name="" id="" value="취소"> 
+            <input type="submit" name="" id="" value="확인">
+            
+
+          </div>
+
+
+
+
+        </div>
+
+
+
+
+    </fieldset>
+    
+  
+
+  </form>
+</body>
+</html>
