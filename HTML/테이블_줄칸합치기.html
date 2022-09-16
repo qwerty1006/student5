@@ -11,41 +11,48 @@
     6줄 tr*6
     4칸 td*4
     텍스트 {텍스트}
+    table>tr*6>td*4>{텍스트}
   -->
+  <!-- 1번째 tr에 가서 
+     첫번째 줄<td rowspan="2" 
+      2번째 tr에 가서 첫번째 줄td 주석처리-->
+  <!-- 1번째 tr에 가서  -->
 <p>6줄4칸</p>
-<table border="1" width="70%">
-  <tr>
+<table border="1" width="80%">
+  <tr>  <!-- 1번 tr -->
+    <td rowspan="2">
+      텍스
+    </td>
     <td>텍스</td>
+    <td colspan="2">텍스</td>
+    <!-- <td>텍스</td> -->
+  </tr>
+  <tr>  <!-- 2번 tr -->
+    <!-- <td>텍스</td> -->
     <td>텍스</td>
     <td>텍스</td>
     <td>텍스</td>
   </tr>
-  <tr>
-    <td>텍스</td>
-    <td>텍스</td>
-    <td>텍스</td>
-    <td>텍스</td>
-  </tr>
-  <tr>
-    <td>텍스</td>
+  <tr> <!-- 3번 tr -->
+    <td rowspan="2">텍스</td> 
     <td>텍스</td>
     <td>텍스</td>
     <td>텍스</td>
   </tr>
-  <tr>
-    <td>텍스</td>
-    <td>텍스</td>
-    <td>텍스</td>
-    <td>텍스</td>
-  </tr>
-  <tr>
-    <td>텍스</td>
+  <tr> <!-- 4번 tr -->
+    <!-- <td>텍스</td> -->
     <td>텍스</td>
     <td>텍스</td>
     <td>텍스</td>
   </tr>
-  <tr>
+  <tr> <!-- 5번 tr -->
+    <td rowspan="2">텍스</td>
     <td>텍스</td>
+    <td>텍스</td>
+    <td>텍스</td>
+  </tr>
+  <tr> <!-- 6번 tr -->
+    <!-- <td>텍스</td> -->
     <td>텍스</td>
     <td>텍스</td>
     <td>텍스</td>
