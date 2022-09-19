@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>선택자연습</title>
+  <style>
+    /*  #아이디 */
+    #section1{background-color: #dffcdc;}
+    #section2{background-color: #f8f2d2;}
+    #section3{background-color: #f8ded8;}
+    /* .클래스 */
+    /* .box   문서 내 모든 클래스box */
+    .box{color: #ff3030;}
+    /* 태그 선택자 */
+    /* type 선택자 */
+    h1{color: #2626c3;}
+    /* 조상 후손 공백문자 구분자 */
+    /* section p{color: #bbbb1f;} */
+    /* 부모>자식  > 구분자 */
+    section > p{color: #c4c44a;}
+    /* h1 + p   h1의 인접형제만 색상변경*/
+    h1 + p{background-color: #e6e3e3;}
+    /* ~ 동생 */
+    h1 ~ p{background-color: #3a2;}
+  </style>
+</head>
+<body>
+  <!-- 
+    div#wrap#
+    #아이디명  으로 축약
+  -->
+  <div id="wrap">
+    <header>헤더</header>
+    <!-- .container -->
+    <div class="container">
+     <!-- 
+       section#section$*3
+      -->
+      <section id="section1">
+        <p>내용</p>
+        <div class="box">
+        
+         <h1>섹션제목</h1>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis voluptatibus nobis adipisci placeat, aut molestias illum, illo id repellendus nisi sit neque beatae mollitia ullam inventore error ipsum praesentium sunt.</p>
+         <p>동생</p>
+        </div>
+      </section>
+      <section id="section2">
+        <!-- p+.box -->
+        <p>내용</p>
+        <div class="box">
+          <p>형님</p>
+          <!-- hi+p*2 -->
+          <h1>섹션제목</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis voluptatibus nobis adipisci placeat, aut molestias illum, illo id repellendus nisi sit neque beatae mollitia ullam inventore error ipsum praesentium sunt.</p>
+          <p>동생</p>
+        </div>
+      </section>
+      <section id="section3">
+      <p>내용</p>
+      <div class="box">
+      <h1>섹션제목</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis voluptatibus nobis adipisci placeat, aut molestias illum, illo id repellendus nisi sit neque beatae mollitia ullam inventore error ipsum praesentium sunt.</p>
+      <p>동생</p>
+    </div>
+    </section>
+
+
+    </div>
+    <footer>푸터</footer>
+   <!-- //#wrap -->
+  </div>
+</body>
+</html>
