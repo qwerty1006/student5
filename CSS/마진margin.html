@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>margin</title>
+  <style>
+    /* user agent의 고유 여백 있으므로 안팎여백 padding margin 0지정 */
+    *{margin:0;padding:0;}
+    /* .box{margin: 50px;} 1값 상우하좌 */
+    /* .box{margin: 10px 20px 30px 40px;} 4값 상 우 하 좌 */
+    /* .box{margin: 10px 20px 30px;} 3값 상 우좌 하 */
+    /* .box{margin: 10px 20px;} 2값 상하 좌우*/
+    .box{margin: 10px 20px;}
+
+    .box1{background-color: #f00;}
+    .box2{background-color: #0f0;}
+    .box3{background-color: #00f;}
+    /* 너비는 부모 높이는 자식 지정 */
+
+  </style>
+</head>
+<body>
+  <!-- div.box.box$*3>{box$} -->
+  <div class="box box1">box1</div>
+  <div class="box box2">box2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum similique natus, perferendis error sunt neque non reiciendis, harum in voluptatibus quaerat modi obcaecati rem, delectus odit expedita soluta labore consequatur.</div>
+  <div class="box box3">box3</div>
+</body>
+</html>

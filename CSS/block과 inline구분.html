@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>block과 inline구분</title>
+  <style>
+   /* span{color:#f00} 문서내 모든 span태그가 변경됨
+      문서내 영향을 끼치는 것은 id 
+      input과 label 쓰고 싶을때 id 사용했었음
+      span태그에 class 지정
+      style 지정할때는 .기재 span에는 .미기재
+      추후 bem 찾아보기  */
+      
+   .text-red{color:#f00;}
+  </style>
+</head>
+<body>
+  <!-- p>lorem -->
+  <p>Lorem ipsum, <span class="text-red">dolor</span> sit amet consectetur adipisicing elit. Necessitatibus doloremque dolorem excepturi quo distinctio iste maiores? Suscipit nesciunt, beatae a iusto reiciendis tenetur qui pariatur, id libero repudiandae incidunt vitae.</p>
+  <!-- p태그는 블록레벨로 포함한 내용에서 특정해서 스타일 변경 불가
+  다른 태그_span 감싸서 스타일 속성 변경해야함 -->
+  <!-- div>{내용확인} -->
+  <div>내용확인</div>
+  <!-- <span>인라인내용</span> <s>가격</s>-->
+  <!-- 인라인레벨인 span s태그는 태그가 포함한 요소만큼만 공간차지 -->
+  <span>인라인내용</span> <s>가격</s>
+</body>
+</html>
