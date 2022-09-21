@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>부모요소 크기를 따르는 이미지크기</title>
+  <style>
+    *{margin: 0; padding: 0;}
+
+     .wrap{
+      width: 80%;
+      margin: 0 auto;
+      background-color: #ccc;}
+     /* 부모는 block(div) width 퍼센트
+        img 사진만큼 커지고 싶지 않으면 max-width _쇼핑몰엔 부적합 (쇼핑몰은 width 100%)
+        선택사항 : 이미지도 display:block으로 넣기
+         */
+    
+    .img-wrap{
+      /* 테슽 너비지정 */
+      width: 50%;
+      min-width:200px;
+      max-width: 600px;
+      /* 테스트 너비지정 */
+      /* border: 1px solid #000;
+      background-color: #f00;
+      margin: 50px 0;} */
+    /* .img-wrap 후손  img 태그 */
+    .img-wrap img{
+      /* img 요소를 block 레벨수준 변경 */
+      display: block;
+      /* 100% 부모의 사용가능한 너비영역 
+         margin  border padding 제외한 나머지 영억 */
+      width: 100%;
+      /* width 지정하지 않고 max-width 원래 이미지 크기 이상 되지 말아라 */
+      /* max-width: 100%; */
+      /* height 초기값 auto  */
+      /* height:auto; */ }
+    
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="img-wrap ex1">
+    <img src="../assets/images/cherryblossom.jpg" alt="이미지연습1"></div>
+
+     <div class="img-wrap ex2">
+    <img src="../assets/images/cherryblossom.jpg" alt="이미지연습2"></div>
+    
+    <div class="img-wrap ex3">
+    <img src="../assets/images/cherryblossom.jpg" alt="이미지연습3"></div>
+  </div>
+</body>
+</html>

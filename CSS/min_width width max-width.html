@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>min_width width max-width</title>
+  <style>
+    *{margin:0; padding: 0;}
+   .wrap{
+    /* 부모를 기준으로 너비 80% */
+    /* min쓸때 width는 퍼센트로 min들은 픽셀단위로 지정 */
+    width: 80%;
+    
+    min-width: 1190px;
+    max-width: 1400px;
+    /* min-height: 400px; */
+    /* vh 뷰포트의 기준 */
+    min-height: 50vh;
+    background-color: #ccc;
+    /* 블록 가운데 */
+    margin: 0 auto;
+
+   }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, deleniti? Beatae quia explicabo, ut illum ducimus atque quasi debitis consectetur necessitatibus iusto libero neque delectus. Ducimus itaque nobis similique laudantium.</div>
+</body>
+</html>

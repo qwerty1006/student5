@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>너비와 높이계산</title>
+  <style>
+    *{margin:0; padding:0;}
+    .container{ 
+      width:800px; 
+      margin: 30px auto /* 블록레벨의 가운데 정렬 */ ; 
+      border: 1px solid #000;
+      padding: 50px ; 
+      background-color: #ccc;
+     /* 부모 요소에 넘치는 것은 보이지 말아라 */ 
+     /* overflow: hidden;}  */
+     
+     /* .box 기본값 투명색상이라 미지정시 container와 동일색상반영 */
+    .box{
+      background-color: #ef3;
+      width: 700px;
+      border: 10px solid #0f0;
+      padding: 50px;
+      /* box margin은 부모 안 & 자식 밖 여백이라 복잡
+         부모자식간의 여백을 주고 싶을때는 부모 안에 여백으로 설정 */
+      margin: 100px;
+}
+    .ex1 .box{min-height: 50px;}
+    .ex2 .box{}
+    .ex3 .box{}
+
+  </style>
+</head>
+<body>
+  <!-- div.container.ex$*3>div.box>{내용$} -->
+  <div class="container ex1">
+    <div class="box">내용1</div>
+  </div>
+  <div class="container ex2">
+    <!-- 기본적으로 요소가 포함하고 있는 내용만큼 높이 인식 -->
+    <div class="box">내용2
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae est quod consectetur impedit fugit magnam tenetur, atque autem dolorem nisi eius dolor voluptatibus neque blanditiis accusantium itaque repellendus labore delectus?
+    </div>
+  </div>
+  <div class="container ex3">
+    <div class="box">내용3</div>
+  </div>
+</body>
+</html>
