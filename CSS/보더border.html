@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>보더</title>
+</head>
+<body>
+  <!-- .box.box$*3>{내용$} -->
+  <div class="box box1">내용1</div>
+  <div class="box box2">내용2</div>
+  <div class="box box3">내용3</div>
+  <style>
+    /*  *{margind:0; padding:0;} 리셋작업 */
+    *{margind:0; padding:0;}
+    /* 
+      .box     10점
+      div.box  태그1 클래스 10 11점 
+      !important > 우선순위값 > 소스순서 !important 남용자제
+    */
+    .box{
+      width: 200px; 
+      height: 200px; 
+      margin: 50px; 
+      border: 10px solid #000 !important;
+      border-top-style: dotted;}
+    /* .box{border: 10px solid #000; border-style: dotted} 
+     solid 적용후 스타일규칙에 따라 dotted로 변경 */
+    .box1{
+      background-color: #f00; 
+      border-top-style: dashed;}
+       /* .box{border: 10px solid #000; border-style: dotted} 
+    solid 적용후 스타일규칙에 따라 dotted로 변경
+    .box1{border-top-style: dashed;}우선순위에 따라 dashed로 변경
+    공통스타일 먼저 개별스타일은 나중에 */
+    .box2{
+      background-color: #0f0; 
+      /* border-color: #f0f; */
+      border: 3px dashed #f0f;}
+    .box3{
+      background-color: #00f; 
+      border-left: 0px none;
+      border-right: 0px none;}
+  </style>
+</body>
+</html>
