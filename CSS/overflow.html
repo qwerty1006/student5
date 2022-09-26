@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>overflow</title>
+  <style>
+  /* 
+  .box{} 10점
+  .box1{} 10점
+  .box.box2{} 10+10
+  .box2{} 10점 
+  #section.box{} 100+10-->
+  <!--.box.box2{}  .box2{} 동일 _ 점수차등으로 스타일링 편의위해 사용  */
+ .box{
+  width:300px;
+  height: 100px;
+  background-color: #ccc;
+  margin-bottom:50px;
+}
+.box2{overflow: scroll;}
+.box3{overflow: auto;}
+.box4{overflow: hidden;}
+</style>
+</head>
+<body>
+  <!-- div.box.box$*4>lorem -->
+  <!-- .box.box$*4>lorem -->
+  <div class="box box1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque fugiat suscipit eaque ex et labore ratione doloremque temporibus, quaerat adipisci laborum repellendus porro, incidunt tempora voluptatum vel doloribus similique consequuntur?</div>
+  <div class="box box2">Ex quos libero omnis mollitia possimus, iste doloremque sunt maxime, perferendis asperiores, delectus debitis enim dolores odio dolore! Commodi tenetur, odio accusantium eum id tempore voluptatibus soluta quis dicta ipsum.</div>
+  <div class="box box3">Non voluptates quo neque laboriosam laudantium sint recusandae aliquam vero aut! Quasi ex obcaecati dolore officia similique harum placeat quia cumque consequuntur, doloribus alias optio excepturi maxime odit iure commodi?</div>
+  <div class="box box4">Possimus excepturi, fugit, vitae ipsa ab quos quasi impedit unde cupiditate eius illo dolorum enim incidunt voluptatibus, quaerat explicabo totam modi distinctio recusandae labore atque. Rerum eos autem ex molestiae.</div>
+  
+</body>
+</html>
