@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>링크스타일2</title>
+  <style>body {
+    color:#ccc; 
+  }
+  /*a{
+     color:#ff0;  a태그 통으로 주지 x 개별적으로
+  }*/
+  /* a:link{color:#000;
+     text-decoration: none;}
+  a:visited{color:#000;
+    text-decoration: none;} 틀린건 아님 편의위해 하기표기*/
+
+  a:link,
+  a:visited{
+    color:#000;
+    text-decoration: none;
+  }
+  a:hover{
+    color: #f00;
+    text-decoration: underline;}
+  </style> 
+</head>
+<body>
+  <!-- ul>li*li*3>a>{메뉴$} -->
+  <ul>
+    <li>링크가 없는 텍스트</li>
+    <li><a href="http://www.mo.co.kr">메뉴1</a></li>
+    <li><a href="">메뉴2</a></li>
+    <li><a href="">메뉴3</a></li>
+  </ul>
+  <!-- p*2>lorem -->
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates sequi totam repellendus sint ut explicabo ea ipsum animi, aliquam voluptatem! Accusantium ad quasi fuga eaque dignissimos perspiciatis et, voluptates quia.</p>
+  <p>Aliquam nostrum accusamus dicta rem eos, quae ratione vitae totam eligendi sequi explicabo alias pariatur fuga harum obcaecati voluptatum ex illum sit, sapiente in officia? Debitis ipsa hic a nam!</p>
+</body>
+</html>
