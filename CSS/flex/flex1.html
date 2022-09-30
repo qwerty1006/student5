@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>flex layout 수직수평가운데</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0
+    }
+    /* flex container의 직계자식이 flex item이 된다 */
+    .container{}
+    .parent{
+      display: flex;
+      /* height: 100vh; 브라우저 100%,  flex에서는 자식이 부모의 높이를 가져온다*/
+      height: 100vh;
+      box-sizing: border-box;
+      background-color: #ccc;
+     
+       /* flex item 주축(수평)가운데 */
+      justify-content: center;
+       /* flex item 교차축 가운데 , 부모높이 가져오던걸 중단하는 설정 있음*/
+       /* align-items: center; 
+       center, flex-start, flex-end 지정하면 자신의 높이만 인식 */
+       align-items: center; 
+            
+    }
+    .child{
+      background-color: #999;
+
+    }
+    .child span{
+      display: block;
+      text-align: center;      
+      
+    }
+    .child span:nth-of-type(1){
+      font-size: 60px;
+      font-weight: 700;
+    }
+    
+    .child span:nth-of-type(2){
+      font-size: 1.5rem;
+      letter-spacing: 1.5px;
+    }
+    
+
+
+  
+  </style>
+</head>
+
+<body>
+  <div class="contianer">
+    <div class="parent">
+      <div class="child">
+        <span>Header Title</span>
+        <span>short description some word</span>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
