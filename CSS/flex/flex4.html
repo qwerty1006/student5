@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flex layout - header 1row 3단 레이아웃1</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        padding: 1rem;
+        /* min-width: 960px; */
+        width: 85%;
+      }
+      .parent{
+        display: flex;
+        flex-direction: row;
+        /* 플렉스아이템 주축 정렬 양끝 정렬 균등여백 */
+        justify-content: space-between;
+        /* 플렉스아이템 교차축 가운데 정렬 */
+        align-items: center;
+        background-color: #ccc;
+      }
+      .parent .child{
+      background-color: #999;
+     /* border: 1px solid #000; */
+      }
+      .logo{
+     /* 너비 150px 높이 150px */
+     width: 150px;
+     height: 150px;
+     }
+    .navigation{
+      /* 플렉스 컨테이너의 다른 플렉스아이템 배치되고 남은 여유공간에 맞게 해당 플렉스 아이템을 늘려준다 */
+      flex-grow: 1;
+    /* 너비 200px 글자 가운데 높이 80px */
+     padding: 0 10px;
+     width: 200px;
+     line-height: 80px;
+     /* logo nav util사이에 공간 주고 싶다고 컨테이너의 직계자식에게는 복잡해져서 margin을 잘 주지 않음 */
+    
+     }
+     .navigation .inner{
+      background-color:#ef8 ;
+      
+     }
+    .util-top{
+    width: 80x;
+    height: 60px;
+    }
+
+     
+    </style>
+    </head>
+    
+    <body>
+      <div class="container">
+        <header class="parent">
+          <div class="logo child">logo</div>
+          <div class="navigation child">nav</div>
+           <div class="inner">nav</div>
+          <div class="util-top child">util-top</div>
+        </header>
+      </div>
+    </body>
+    
+    </html>
